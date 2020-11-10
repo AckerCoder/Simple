@@ -12,6 +12,8 @@ import com.google.gson.Gson
 class NewProduct : AppCompatActivity() {
     var productName:String? = null
     fun addProductButton(view: View){
+        productName = findViewById<EditText>(R.id.addProductName).text.toString()
+
         productName?.let { Product(it) }?.let {
             inventoriesList[currentInventoryPosition!!].addProduct(
                 it
@@ -32,6 +34,5 @@ class NewProduct : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_product)
-        productName = findViewById<EditText>(R.id.addProductName).text.toString()
     }
 }

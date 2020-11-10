@@ -9,11 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Simple">
-        <activity android:name=".NewProduct"></activity>
-        <activity android:name=".adapters.NewProduct" />
+        <activity android:name=".ProductKardex"></activity>
+        <activity android:name=".NewProduct" />
         <activity android:name=".MainMenu" />
         <activity android:name=".NewInventory" />
-        <activity android:name=".menuPrincipal" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

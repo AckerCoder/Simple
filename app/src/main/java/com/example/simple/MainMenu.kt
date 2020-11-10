@@ -12,6 +12,7 @@ import com.example.simple.adapters.ProductListAdapter
 import com.example.simple.classes.Product
 
 var currentProduct:Product? = null
+var currentProductPosition: Int? = null
 
 class MainMenu : AppCompatActivity() {
     fun addProductButton(view: View){
@@ -30,6 +31,14 @@ class MainMenu : AppCompatActivity() {
         val listViewProducts = findViewById<ListView>(R.id.productListView)
         adapterProductList = currentInventory?.products?.let { ProductListAdapter(this, it) }
         listViewProducts.adapter = adapterProductList
+
+        listViewProducts.setOnItemClickListener { _, _, position, _ ->
+            currentProduct = currentInventory!!?.products[position]
+            currentProductPosition = position
+
+            val intent = Intent(applicationContext, ProductKardex::class.java)
+            startActivity(intent)
+        }
     }
 }
 
