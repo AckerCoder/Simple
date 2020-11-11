@@ -6,4 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".ProductKardex">
 
+    <Button
+        android:id="@+id/addSectionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:onClick="addNewSectionButton"
+        android:text="Agregar Sección"
+        android:textAllCaps="false"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:autoText="false"
+        android:fontFamily="@font/open_sans_semibold"
+        android:gravity="center"
+        android:text="NOMBRE PRODUCTO"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/sectionListView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/addSectionButton"
+        app:layout_constraintTop_toBottomOf="@+id/productTitle"
+        tools:layout_editor_absoluteX="126dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
