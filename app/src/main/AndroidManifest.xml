@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Simple">
-        <activity android:name=".ProductKardex"></activity>
+        <activity android:name=".NewSection"></activity>
+        <activity android:name=".ProductKardex" />
         <activity android:name=".NewProduct" />
         <activity android:name=".MainMenu" />
         <activity android:name=".NewInventory" />

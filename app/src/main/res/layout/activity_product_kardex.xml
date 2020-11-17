@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/open_sans_semibold"
-        android:onClick="addNewSectionButton"
+        android:onClick="addSecctionButton"
         android:text="Agregar Sección"
         android:textAllCaps="false"
         app:backgroundTint="#000000"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/sectionListView"
+        android:id="@+id/sectionListView1"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         app:layout_constraintBottom_toTopOf="@+id/addSectionButton"

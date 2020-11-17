@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.simple.R
-import com.example.simple.classes.Inventory
 import com.example.simple.classes.Section
 
 class SectionListAdapter1(private val context: Context, private val dataSource: ArrayList<Section>): BaseAdapter() {
@@ -35,6 +34,7 @@ class SectionListAdapter1(private val context: Context, private val dataSource: 
 
         sectionName.text = section.name
         sectionStock.text = section.stock.toString() + " " + section.units
+
 
         return rowView
     }

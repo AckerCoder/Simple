@@ -2,7 +2,6 @@ package com.example.simple
 
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,9 +11,10 @@ import com.google.gson.Gson
 
 class NewInventory : AppCompatActivity() {
 
+
     fun addNewInventoryButton(view: View){
-        val inventoryName = findViewById<EditText>(R.id.addInventoryName).text.toString()
-        val inventoryLocation = findViewById<EditText>(R.id.addInventoryLocation).text.toString()
+        val inventoryName = findViewById<EditText>(R.id.addSectionName).text.toString()
+        val inventoryLocation = findViewById<EditText>(R.id.addSectionUnits).text.toString()
         val newInventory = Inventory(inventoryName, inventoryLocation)
         inventoriesList.add(newInventory)
 

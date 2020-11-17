@@ -19,17 +19,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <Button
-            android:id="@+id/takeOutButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/round_button"
-            android:gravity="center_vertical|center_horizontal"
-            android:hapticFeedbackEnabled="false"
-            android:text="1"
-            app:cornerRadius="1250dip" />
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="120dp"
+        android:layout_height="108dp"
+        app:srcCompat="@drawable/plus"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="44dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

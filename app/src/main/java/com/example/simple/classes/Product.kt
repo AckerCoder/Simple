@@ -1,4 +1,5 @@
 package com.example.simple.classes
+import com.example.simple.NewSection
 import com.example.simple.classes.Section as Section
 
 class Product {
@@ -8,4 +9,9 @@ class Product {
     constructor(name: String){
         this.name = name
     }
+
+    fun addSection(newSection: Section){
+        sections.add(newSection)
+    }
+
 }
